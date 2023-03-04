@@ -11,6 +11,7 @@ public class DeleteTheDataFromTheTable {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/industry","root","root");
 		PreparedStatement preparedStatement=connection.prepareStatement("Delete from it where e_id=?");
+		@SuppressWarnings("resource")
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the Employee id");
 		int e_id=scanner.nextInt();
