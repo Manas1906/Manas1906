@@ -16,3 +16,5 @@ statement.execute("create database Jehe6");
 System.out.println("database created succesfully");
 }
 }
+
+// This program is used to create database in mysql application without manually creating the database in the mysql application.
